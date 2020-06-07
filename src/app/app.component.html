@@ -1,1 +1,62 @@
-<div>Hola Viviana, Estamos Testeando Kirusafe</div>
+<div class="content-max">
+    <div class="content-section">
+        <div class="content-body">
+            <div class="content-father">
+                <div class="menu">
+                    <img [src]="logoKirusafe" alt="logo" class="menu-logo">
+                    <div class="menu-desktop">
+                        <div *ngFor="let item of listMenu" class="menu-desktop__item">
+                            {{item.title}}
+                        </div>
+                    </div>
+                    <div class="menu-mobile">
+                        <i class="gg-menu-right-alt" style="color:#731469"></i>
+                    </div>
+                </div>
+                <div class="header-principal">
+                    <div class="header-principal-box">
+                        <div class="header-principal-box__title">{{headerContent.title}}</div>
+                        <div class="header-principal-box__subtitle">{{headerContent.subTitle}}</div>
+                        <div class="header-principal-box__description">{{headerContent.description}}</div>
+                        <div>
+                            <button class="header-principal-box__btn">
+                            <span class="header-principal-box__btn__title">
+                                {{headerContent.btn}}
+                            </span>
+                                <i class="gg-chevron-right-o"></i> </button>
+                        </div>
+                    </div>
+                    <img [src]="headerContent.img" alt="girls" class="header-principal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section" style="background: #F8D152">
+        <div class="content-body">
+            <div class="content-father">
+                Quienes somos
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <div class="content-body">
+            <div class="content-father">
+                Como lo hacemos
+            </div>
+        </div>
+    </div>
+    <div class="content-section" style="background: #F8D152">
+        <div class="content-body">
+            <div class="content-father">
+                Quienes confian en nostros
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <div class="content-body">
+            <div class="content-father">
+                Footer
+            </div>
+        </div>
+    </div>
+</div>
