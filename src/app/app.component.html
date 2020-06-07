@@ -34,7 +34,18 @@
     <div class="content-section" style="background: #F8D152">
         <div class="content-body">
             <div class="content-father">
-                Quienes somos
+                <div class="section-one">
+                    <div class="title-general">
+                        <div class="title-general__line"></div>
+                        <span class="title-general__text">{{sectionOne.title}}</span>
+                    </div>
+                    <div class="section-one-box">
+                        <img [src]="sectionOne.img" alt="section-one" class="section-one-box__img">
+                        <div class="section-one-box__description">
+                            {{sectionOne.description}}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
