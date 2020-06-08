@@ -52,7 +52,23 @@
     <div class="content-section">
         <div class="content-body">
             <div class="content-father">
-                Como lo hacemos
+                <div class="section-two">
+                    <div class="title-general">
+                        <div class="title-general__line"></div>
+                        <span class="title-general__text">{{sectionTwo.title}}</span>
+                    </div>
+                    <div class="section-two-box">
+                        <div *ngFor="let item of sectionTwo.listItem" class="section-two-box-item" (click)="checkBox(item)">
+                            <div class="section-two-box-item-block">
+                                <div class="section-two-box-item-block__icon"><i class="gg-add-r"></i></div>
+                                <div class="section-two-box-item-block__description">{{item.description}}</div>
+                            </div>
+                            <div class="section-two-box-item-img">
+                                <img *ngIf="item.flag" [src]="item.img" alt="img" class="section-two-box-item-img--img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

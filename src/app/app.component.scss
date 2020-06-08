@@ -256,3 +256,71 @@
     }
   }
 }
+
+// Section two
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  //background-image: url('src/assets/img/bg_section_2.png');
+  background-size: cover;
+  @include md-lg-devices {
+    padding: 10px 0 25px;
+  }
+}
+
+.section-two-box {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  @include md-lg-devices {
+    padding: 0 0;
+  }
+}
+
+.section-two-box-item-block{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #EC8D9F;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 40px 30px;
+  color: #FFFFFF;
+  @include md-lg-devices {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  &__icon{
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 0 0 0 20px;
+    @include md-lg-devices {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  }
+}
+
+.section-two-box-item-img {
+  display: flex;
+  justify-content: center;
+  @include md-lg-devices {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  &--img {
+    @include md-lg-devices {
+      width: 600px;
+    }
+  }
+}
