@@ -82,13 +82,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 33px 0;
+  padding: 93px 0;
   @include md-lg-devices {
     background: #FFFFFF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0 30px;
+    padding: 25px 0 50px;
   }
 }
 

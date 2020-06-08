@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit{
   title = 'kirusafe';
   listMenu = [
@@ -18,7 +20,7 @@ export class AppComponent implements OnInit{
       title: '¿Cómo lo hacemos?'
     }
   ];
-  urlVideo = 'https://youtu.be/cnzK1JsvZV4'
+  urlVideo = 'https://www.youtube.com/watch?v=Q4u0Q69gmLM'
   logoKirusafe = 'assets/img/logo.png'
   headerContent = {
     title: 'KiruSafe',
@@ -56,7 +58,7 @@ export class AppComponent implements OnInit{
       socials: [
         {
           icon : 'assets/img/ic_youtube.png',
-          url: 'https://www.facebook.com/kirusafe'
+          url: 'https://www.youtube.com/channel/UCGCZ2VR412YER2eEFJOW2wA'
         },
         {
           icon : 'assets/img/ic_facebook.png',
@@ -71,6 +73,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
+    AOS.init();
   }
 
   checkBox(item) {

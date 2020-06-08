@@ -1,5 +1,5 @@
 <div class="content-max">
-    <div class="content-section">
+    <div class="content-section" data-aos="zoom-in-down">
         <div class="content-body">
             <div class="content-father">
                 <div class="menu">
@@ -19,7 +19,7 @@
                         <div class="header-principal-box__subtitle">{{headerContent.subTitle}}</div>
                         <div class="header-principal-box__description">{{headerContent.description}}</div>
                         <div>
-                            <button class="header-principal-box__btn" (click)="openLink(urlVideo)">
+                            <button style="outline:none" class="header-principal-box__btn" (click)="openLink(urlVideo)">
                             <span class="header-principal-box__btn__title">
                                 {{headerContent.btn}}
                             </span>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="content-section" style="background: #F8D152">
+    <div class="content-section" style="background: #F8D152" data-aos="zoom-in-down">
         <div class="content-body">
             <div class="content-father">
                 <div class="section-one">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="content-section">
+    <div class="content-section" data-aos="zoom-in-down">
         <div class="content-body">
             <div class="content-father">
                 <div class="section-two">
@@ -65,7 +65,7 @@
                                 <div class="section-two-box-item-block__description">{{item.description}}</div>
                             </div>
                             <div class="section-two-box-item-img">
-                                <img *ngIf="item.flag" [src]="item.img" alt="img" class="section-two-box-item-img--img">
+                                <img *ngIf="item.flag" [src]="item.img" alt="img" class="section-two-box-item-img--img" data-aos="zoom-in-down">
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-    <div class="content-section" style="background: #731469">
+    <div class="content-section" style="background: #731469" data-aos="zoom-in-down">
         <div class="content-body">
             <div class="content-father">
                 <div class="section-footer">
