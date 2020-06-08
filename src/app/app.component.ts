@@ -67,7 +67,7 @@ export class AppComponent implements OnInit{
         }
       ],
       email: {
-        text: 'hola@kirusafe.com',
+        text: 'kirusafe@gmail.com',
         url: ''
       }
     }
