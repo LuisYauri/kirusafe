@@ -196,6 +196,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   &__line {
     width: 10px;
     height: 38px;
@@ -208,6 +209,7 @@
       margin-right: 9px;
     }
   }
+
   &__text {
     font-style: normal;
     font-weight: bold;
@@ -239,7 +241,7 @@
     }
   }
 
-  &__description{
+  &__description {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -279,7 +281,7 @@
   }
 }
 
-.section-two-box-item-block{
+.section-two-box-item-block {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -295,8 +297,10 @@
     align-items: center;
     padding: 20px 30px;
   }
-  &__icon{
+
+  &__icon {
   }
+
   &__description {
     font-style: normal;
     font-weight: 600;
@@ -318,9 +322,95 @@
     overflow-x: scroll;
     justify-content: flex-start;
   }
+
   &--img {
     @include md-lg-devices {
       width: 600px;
+    }
+  }
+}
+
+// Footer
+
+.section-footer {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include md-lg-devices {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  &-left {
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin: 0 0 10px 0;
+      @include md-lg-devices {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    &__description {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      color: #FFFFFF;
+      @include md-lg-devices {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include md-lg-devices {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0 0 10px 0;
+      @include md-lg-devices {
+        margin: 20px 0;
+      }
+      &__item {
+        height: 23px;
+        cursor: pointer;
+        margin: 0 10px 0;
+      }
+    }
+
+    &__contact {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      color: #FFFFFF;
+      align-items: center;
+      &__icon {
+        margin-right: 10px;
+      }
     }
   }
 }

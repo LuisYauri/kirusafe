@@ -19,11 +19,11 @@
                         <div class="header-principal-box__subtitle">{{headerContent.subTitle}}</div>
                         <div class="header-principal-box__description">{{headerContent.description}}</div>
                         <div>
-                            <button class="header-principal-box__btn">
+                            <button class="header-principal-box__btn" (click)="openLink(urlVideo)">
                             <span class="header-principal-box__btn__title">
                                 {{headerContent.btn}}
                             </span>
-                                <i class="gg-chevron-right-o"></i> </button>
+                                <i class="gg-chevron-right-o"></i></button>
                         </div>
                     </div>
                     <img [src]="headerContent.img" alt="girls" class="header-principal-img">
@@ -58,7 +58,8 @@
                         <span class="title-general__text">{{sectionTwo.title}}</span>
                     </div>
                     <div class="section-two-box">
-                        <div *ngFor="let item of sectionTwo.listItem" class="section-two-box-item" (click)="checkBox(item)">
+                        <div *ngFor="let item of sectionTwo.listItem" class="section-two-box-item"
+                             (click)="checkBox(item)">
                             <div class="section-two-box-item-block">
                                 <div class="section-two-box-item-block__icon"><i class="gg-add-r"></i></div>
                                 <div class="section-two-box-item-block__description">{{item.description}}</div>
@@ -72,17 +73,33 @@
             </div>
         </div>
     </div>
-    <div class="content-section" style="background: #F8D152">
+<!--    <div class="content-section" style="background: #F8D152">-->
+<!--        <div class="content-body">-->
+<!--            <div class="content-father">-->
+<!--                Quienes confian en nostros-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="content-section" style="background: #731469">
         <div class="content-body">
             <div class="content-father">
-                Quienes confian en nostros
-            </div>
-        </div>
-    </div>
-    <div class="content-section">
-        <div class="content-body">
-            <div class="content-father">
-                Footer
+                <div class="section-footer">
+                    <div class="section-footer-left">
+                        <div class="section-footer-left__title">{{sectionFooter.left.title}}</div>
+                        <div class="section-footer-left__description">{{sectionFooter.left.description}}</div>
+                    </div>
+                    <div class="section-footer-right">
+                        <div class="section-footer-right__socials">
+                            <img *ngFor="let item of sectionFooter.right.socials"
+                                 class="section-footer-right__socials__item" [src]="item.icon" alt=""
+                                 (click)="openLink(item.url)">
+                        </div>
+                        <div class="section-footer-right__contact">
+                            <div class="section-footer-right__contact__icon"><i class="gg-mail"></i></div>
+                            <div>{{sectionFooter.right.email.text}}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

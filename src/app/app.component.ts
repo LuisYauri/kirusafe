@@ -21,6 +21,7 @@ export class AppComponent implements OnInit{
       title: '¿Quienes confian en nosotros?'
     }
   ];
+  urlVideo = 'https://youtu.be/cnzK1JsvZV4'
   logoKirusafe = 'assets/img/logo.png'
   headerContent = {
     title: 'KiruSafe',
@@ -49,6 +50,28 @@ export class AppComponent implements OnInit{
       }
     ]
   }
+  sectionFooter = {
+    left: {
+      title: 'KiruSafe.com',
+      description: '© 2020 Todos los derechos reservados'
+    },
+    right: {
+      socials: [
+        {
+          icon : 'assets/img/ic_youtube.png',
+          url: 'https://www.facebook.com/kirusafe'
+        },
+        {
+          icon : 'assets/img/ic_facebook.png',
+          url: 'https://www.facebook.com/kirusafe'
+        }
+      ],
+      email: {
+        text: 'hola@kirusafe.com',
+        url: ''
+      }
+    }
+  }
 
   ngOnInit() {
   }
@@ -57,5 +80,7 @@ export class AppComponent implements OnInit{
     item.flag = !item.flag
   }
 
-
+  openLink(url) {
+    window.open(url, "_blank");
+  }
 }
