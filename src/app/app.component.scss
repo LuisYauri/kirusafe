@@ -43,8 +43,9 @@
 }
 
 .menu-logo {
+  width: 221px;
   @include xs-devices {
-    width: 112px;
+    width: 140px;
   }
 }
 
