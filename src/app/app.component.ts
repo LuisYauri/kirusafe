@@ -8,7 +8,7 @@ import * as AOS from 'aos';
 })
 
 export class AppComponent implements OnInit{
-  title = 'kirusafe';
+  title = 'kirusafe'
   listMenu = [
     {
       title: 'Inicio',
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
       title: '¿Cómo lo hacemos?',
       id: 'section-2'
     }
-  ];
+  ]
   urlVideo = 'https://www.youtube.com/watch?v=Q4u0Q69gmLM'
   logoKirusafe = 'assets/img/logo.png'
   headerContent = {
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit{
   }
   sectionOne = {
     title: '¿Quiénes somos?',
-    description: 'Somos una comunidad que integra docentes Especialistas y estudiantes de diversas profesiones, con la finalidad de brindar educación en el marco de la promoción y prevención de la salud, con mayor énfasis en la salud bucal  de  niños menores a 12 años de zonas rurales, para el  cual empleamos metodologías ágiles y medios de comunicación digital de acceso libre y así poder desarrollar sesiones educativas personalizadas por cada grado y sección, teniendo siempre como aliado estratégico.',
+    description: 'Somos una comunidad que integra docentes Especialistas y estudiantes de diversas profesiones, con la finalidad de brindar educación en el marco de la promoción y prevención de la salud, con mayor énfasis en la salud bucal  de  niños menores a 6 años de zonas rurales, para el  cual empleamos metodologías ágiles y medios de comunicación digital de acceso libre y así poder desarrollar sesiones educativas personalizadas por cada grado y sección, teniendo siempre como aliado estratégico.',
     img: 'assets/img/img_section_1.png'
   }
   sectionTwo = {
