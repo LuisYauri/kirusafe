@@ -88,6 +88,7 @@
                     <div class="section-three-box">
                         <div *ngFor="let item of sectionThree.listPersons" class="section-three-box-card" data-aos="zoom-in-down">
                             <img [src]="item.img" alt="section-threeeee" class="section-three-box-card__img">
+                            <div class="section-three-box-card__carge">{{item.carge}}</div>
                             <div class="section-three-box-card__title">{{item.title}}</div>
                             <div class="section-three-box-card__description">{{item.description}}</div>
                         </div>
@@ -96,13 +97,24 @@
             </div>
         </div>
     </div>
-<!--    <div class="content-section" style="background: #F8D152">-->
-<!--        <div class="content-body">-->
-<!--            <div class="content-father">-->
-<!--                Quienes confian en nostros-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div id="section-4" class="content-section" data-aos="zoom-in-down">
+        <div class="content-body">
+            <div class="content-father">
+                <div class="section-four">
+                    <div class="title-general">
+                        <div class="title-general__line"></div>
+                        <span class="title-general__text">{{sectiorFour.title}}</span>
+                    </div>
+                    <div class="section-four-box">
+                        <div *ngFor="let item of sectiorFour.listGroup" class="section-four-box-card" data-aos="zoom-in-down">
+                            <img [src]="item.img" alt="section-fourrrr" class="section-four-box-card__img">
+                            <div class="section-four-box-card__title">{{item.title}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="content-section" style="background: #731469" data-aos="zoom-in-down">
         <div class="content-body">
             <div class="content-father">

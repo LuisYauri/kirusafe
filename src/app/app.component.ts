@@ -25,6 +25,10 @@ export class AppComponent implements OnInit{
     {
       title: '¿Quienes nos representan?',
       id: 'section-3'
+    },
+    {
+      title: '¿Quienes confian en nosotros?',
+      id: 'section-4'
     }
   ]
   urlVideo = 'https://www.youtube.com/watch?v=Q4u0Q69gmLM'
@@ -62,52 +66,87 @@ export class AppComponent implements OnInit{
       {
         img: 'assets/img/picture_vicuña.png',
         title: 'Luis Vicuña Hauqui',
-        description: 'Odontología, UNMSM'
+        description: 'Odontología, UNMSM',
+        carge: 'CEO (Chief Executive Officer)'
       },
       {
         img: 'assets/img/picture_garrido.png',
         title: 'Joely Garrido Ayala',
-        description: 'Odontología, UNMSM'
+        description: 'Odontología, UNMSM',
+        carge: 'CLO (Chief Legal Officer)'
       },
       {
         img: 'assets/img/picture_barzola.png',
         title: 'Maritza Barzola Guerrero',
-        description: 'Ing. Industrial, UNMSM'
+        description: 'Ing. Industrial, UNMSM',
+        carge: 'CMO (Chief Marketing Officer)'
       },
       {
         img: 'assets/img/picture_martel.png',
         title: 'Lucelia Martel Quispe',
-        description: 'Odontología, UNMSM'
+        description: 'Odontología, UNMSM',
+        carge: 'CMO (Chief Marketing Officer)'
       },
       {
         img: 'assets/img/picture_not_found.png',
         title: 'Alisson Arroyo Romo',
-        description: 'Ing. Software, UNMSM'
+        description: 'Ing. Software, UNMSM',
+        carge: 'CTO (Chief Technical Officer)'
       },
       {
         img: 'assets/img/picture_yauri.png',
         title: 'Luis Yauri Martinez',
-        description: 'Ing. Software, UNMSM'
+        description: 'Ing. Software, UNMSM',
+        carge: 'CIO (Chief Information Officer)'
       },
       {
         img: 'assets/img/picture_alata.png',
         title: 'Shady Alata Jimenez',
-        description: 'Bach. Odontología, UNMSM'
+        description: 'Bach. Odontología, UNMSM',
+        carge: 'CCO (Chief Communications Officer)'
       },
       {
         img: 'assets/img/picture_salcedo.png',
         title: 'Mg. CD Esp. Mercedes',
-        description: 'Rita Salcedo Rioja'
+        description: 'Rita Salcedo Rioja',
+        carge: 'COO (Chief Operating Officer)'
       },
       {
         img: 'assets/img/picture_not_found.png',
         title: 'Claudia Trujillo Avalos',
-        description: 'Administración, UNMSM'
+        description: 'Administración, UNMSM',
+        carge: 'CFO (Chief Financial Officer)'
       },
       {
         img: 'assets/img/picture_not_found.png',
         title: 'Diego Aruhuanca Paucar',
-        description: 'Ing. Industrial, UPC'
+        description: 'Ing. Industrial, UPC',
+        carge: 'CMO (Chief Marketing Officer)'
+      }
+    ]
+  }
+  sectiorFour = {
+    title: '¿Quienes confian en nosotros?',
+    listGroup: [
+      {
+        img: 'assets/img/group_pareja.png',
+        title: 'I.E La Pareja, Piura',
+      },
+      {
+        img: 'assets/img/group_odontologia.png',
+        title: 'Facultad de Odontologia UNMSM'
+      },
+      {
+        img: 'assets/img/group_vus.png',
+        title: 'Voluntariado universitario para la salud'
+      },
+      {
+        img: 'assets/img/group_dgrsu.png',
+        title: 'Dirección General de Responsabilidad Social Universitario'
+      },
+      {
+        img: 'assets/img/group_tambo.png',
+        title: 'I.E Jose Palacios Azámbulo, Tambogrande'
       }
     ]
   }
