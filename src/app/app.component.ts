@@ -190,6 +190,7 @@ export class AppComponent implements OnInit{
   }
 
   openForm() {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSf3X0CQhvmir0QaGwcbt2PkBX_yEYR8Hf2WlOZmixCzoAH_eQ/viewform?usp=sf_link ', "_blank");
     console.log('Enviar formulario')
   }
 }
