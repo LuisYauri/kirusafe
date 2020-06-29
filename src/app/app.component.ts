@@ -19,8 +19,12 @@ export class AppComponent implements OnInit{
       id: 'section-1'
     },
     {
-      title: '¿Cómo lo hacemos?',
+      title: '¿Qué servicios brindamos?',
       id: 'section-2'
+    },
+    {
+      title: '¿Quienes nos representan?',
+      id: 'section-3'
     }
   ]
   urlVideo = 'https://www.youtube.com/watch?v=Q4u0Q69gmLM'
@@ -28,27 +32,82 @@ export class AppComponent implements OnInit{
   headerContent = {
     title: 'KiruSafe',
     subTitle: '¡El Lazo que nos une!',
-    description: 'Red nacional de voluntariado en Odontología enfocados en la promoción y prevención en salud oral',
+    description: 'Red de profesionales con vocación y compromiso enfocados en la promoción y prevención en salud oral con el objetivo de reducir la presencia de caries en los niños menores de 6 años de las zonas alejadas de nuestro país.',
     btn: 'VER VIDEO',
     img: 'assets/img/img_girls.png'
   }
   sectionOne = {
     title: '¿Quiénes somos?',
-    description: 'Somos una comunidad que integra docentes Especialistas y estudiantes de diversas profesiones, con la finalidad de brindar educación en el marco de la promoción y prevención de la salud, con mayor énfasis en la salud bucal  de  niños menores a 6 años de zonas rurales, para el  cual empleamos metodologías ágiles y medios de comunicación digital de acceso libre y así poder desarrollar sesiones educativas personalizadas por cada grado y sección, teniendo siempre como aliado estratégico.',
+    description: 'Somos una comunidad que integra docentes especialistas y estudiantes de diversas profesiones, con la finalidad de brindar educación en el marco de la promoción y prevención de la salud, con mayor énfasis en la salud bucal  de  niños menores a 6 años de zonas rurales, para el  cual empleamos metodologías ágiles y medios de comunicación digital de acceso libre y así poder desarrollar sesiones educativas personalizadas por cada grado y sección, teniendo siempre como aliado estratégico.',
     img: 'assets/img/img_section_1.png'
   }
   sectionTwo = {
-    title: '¿Cómo lo hacemos?',
+    title: '¿Que servicios brindamos?',
     listItem: [
       {
-        description: 'Brindamos una educación en la salud en el marco de la promoción y prevención, utilizando Facebook para interactuar y transmitir los conocimientos.',
+        description: 'Brindamos gratuitamente una educación en la salud en el marco de la promoción y prevención, utilizando Facebook para interactuar y transmitir los conocimientos. Sí, ¡Totalmente Gratuita!.',
         img: 'assets/img/img_section_2_1.png',
         flag: false
       },
       {
-        description: 'Además también brindamos una solución clínica para cada caso, con encargados de KiruSafe  que agendarán una Teleconsulta con un especialista y/o estudiante capacitado para brindar alternativas de solución y/o un plan de tratamiento.',
+        description: 'Además, también brindamos teleconsultas odontológicas  por medio de plataformas digitales como Zoom, WhatsApp entre otros.  Para acceder al precio social de  5 nuevos soles por cada teleconsulta , debes unirte junto con tu colegio a nuestra red y así acceder a todos los beneficios.',
         img: 'assets/img/img_section_2_2.png',
         flag: false
+      }
+    ]
+  }
+  sectionThree = {
+    title: '¿Quienes nos representan?',
+    listPersons: [
+      {
+        img: 'assets/img/picture_vicuña.png',
+        title: 'Luis Vicuña Hauqui',
+        description: 'Odontología, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_garrido.png',
+        title: 'Joely Garrido Ayala',
+        description: 'Odontología, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_barzola.png',
+        title: 'Maritza Barzola Guerrero',
+        description: 'Ing. Industrial, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_martel.png',
+        title: 'Lucelia Martel Quispe',
+        description: 'Odontología, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_not_found.png',
+        title: 'Alisson Arroyo Romo',
+        description: 'Ing. Software, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_yauri.png',
+        title: 'Luis Yauri Martinez',
+        description: 'Ing. Software, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_alata.png',
+        title: 'Shady Alata Jimenez',
+        description: 'Bach. Odontología, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_salcedo.png',
+        title: 'Mg. CD Esp. Mercedes',
+        description: 'Rita Salcedo Rioja'
+      },
+      {
+        img: 'assets/img/picture_not_found.png',
+        title: 'Claudia Trujillo Avalos',
+        description: 'Administración, UNMSM'
+      },
+      {
+        img: 'assets/img/picture_not_found.png',
+        title: 'Diego Aruhuanca Paucar',
+        description: 'Ing. Industrial, UPC'
       }
     ]
   }
@@ -89,5 +148,9 @@ export class AppComponent implements OnInit{
 
   redirect(id) {
     location.href= `#${id}`;
+  }
+
+  openForm() {
+    console.log('Enviar formulario')
   }
 }

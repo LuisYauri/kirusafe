@@ -20,10 +20,10 @@
                         <div class="header-principal-box__description">{{headerContent.description}}</div>
                         <div>
                             <button style="outline:none" class="header-principal-box__btn" (click)="openLink(urlVideo)">
-                            <span class="header-principal-box__btn__title">
-                                {{headerContent.btn}}
-                            </span>
-                                <i class="gg-chevron-right-o"></i></button>
+                                <span class="header-principal-box__btn__title">
+                                    {{headerContent.btn}}
+                                </span>
+                                    <i class="gg-chevron-right-o"></i></button>
                         </div>
                     </div>
                     <img [src]="headerContent.img" alt="girls" class="header-principal-img">
@@ -40,7 +40,7 @@
                         <span class="title-general__text">{{sectionOne.title}}</span>
                     </div>
                     <div class="section-one-box">
-                        <img [src]="sectionOne.img" alt="section-one" class="section-one-box__img">
+                        <img [src]="sectionOne.img" alt="section-oneeeee" class="section-one-box__img">
                         <div class="section-one-box__description">
                             {{sectionOne.description}}
                         </div>
@@ -67,6 +67,29 @@
                             <div class="section-two-box-item-img">
                                 <img *ngIf="item.flag" [src]="item.img" alt="img" class="section-two-box-item-img--img" data-aos="zoom-in-down">
                             </div>
+                        </div>
+                        <div class="section-two-info">Queremos ayudarte, escribenos a nuestro formulario o en nuestras redes sociales para más información.</div>
+                        <button style="outline:none" class="section-two-btn" (click)="openForm()">
+                            <span style="margin: 0 20px 0 0">Formulario</span><i class="gg-notes"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-3" class="content-section" style="background: #F8D152" data-aos="zoom-in-down">
+        <div class="content-body">
+            <div class="content-father">
+                <div class="section-three">
+                    <div class="title-general">
+                        <div class="title-general__line"></div>
+                        <span class="title-general__text">{{sectionThree.title}}</span>
+                    </div>
+                    <div class="section-three-box">
+                        <div *ngFor="let item of sectionThree.listPersons" class="section-three-box-card" data-aos="zoom-in-down">
+                            <img [src]="item.img" alt="section-threeeee" class="section-three-box-card__img">
+                            <div class="section-three-box-card__title">{{item.title}}</div>
+                            <div class="section-three-box-card__description">{{item.description}}</div>
                         </div>
                     </div>
                 </div>
