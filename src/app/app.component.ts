@@ -101,7 +101,7 @@ export class AppComponent implements OnInit{
       },
       {
         img: 'assets/img/picture_alata.png',
-        title: 'Shady Alata Jimenez',
+        title: 'Shady Alata Jiménez',
         description: 'Bach. Odontología, UNMSM',
         carge: 'CCO (Chief Communications Officer)'
       },
