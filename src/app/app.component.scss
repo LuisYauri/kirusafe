@@ -325,8 +325,9 @@
   }
 
   &--img {
+    width: 1150px;
     @include md-lg-devices {
-      width: 600px;
+      width: 900px;
     }
   }
 }
