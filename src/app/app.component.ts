@@ -88,7 +88,7 @@ export class AppComponent implements OnInit{
         carge: 'CMO (Chief Marketing Officer)'
       },
       {
-        img: 'assets/img/picture_not_found.png',
+        img: 'assets/img/picture_arroyo.png',
         title: 'Alisson Arroyo Romo',
         description: 'Ing. Software, UNMSM',
         carge: 'CTO (Chief Technical Officer)'
@@ -112,13 +112,13 @@ export class AppComponent implements OnInit{
         carge: 'COO (Chief Operating Officer)'
       },
       {
-        img: 'assets/img/picture_not_found.png',
+        img: 'assets/img/picture_trujillo.png',
         title: 'Claudia Trujillo Avalos',
         description: 'Administración, UNMSM',
         carge: 'CFO (Chief Financial Officer)'
       },
       {
-        img: 'assets/img/picture_not_found.png',
+        img: 'assets/img/picture_aruhuanca.png',
         title: 'Diego Aruhuanca Paucar',
         description: 'Ing. Industrial, UPC',
         carge: 'CMO (Chief Marketing Officer)'
